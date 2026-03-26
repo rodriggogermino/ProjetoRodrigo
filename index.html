@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos Rodrigo</title>
+    <link rel="icon" type="image/x-icon" href="Images/icone.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --glass-bg: rgba(255, 255, 255, 0.05);
+            --glass-border: rgba(255, 255, 255, 0.1);
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: black;
+            background-image: url('Images/bg.png');
+            background-size: fill;
+            background-repeat: no-repeat;
+            background-position: right bottom;
+            background-attachment: fixed;
+            min-height: 100vh;
+            color: #ffffff;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.4) !important;
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--glass-border);
+        }
+        .project-card {
+            background: var(--glass-bg) !important;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid var(--glass-border) !important;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border-radius: 16px;
+        }
+        .project-card:hover {
+            transform: translateY(-12px) scale(1.02);
+            background: rgba(255, 255, 255, 0.1) !important;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4) !important;
+            border-color: rgba(255, 255, 255, 0.3) !important;
+        }
+        .badge {
+            font-weight: 500;
+            padding: 0.5em 1em;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            font-size: 0.7rem;
+        }
+        .btn {
+            border-radius: 10px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        .text-muted {
+            color: #b0b3b8 !important;
+        }
+        .display-5 {
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body class="d-flex flex-column">
+    <header class="py-5 mb-4 shadow-sm">
+        <div class="container text-center">
+            <h1 class="display-5 fw-bold mb-2">Projetos Rodrigo</h1>
+            <p class="lead opacity-75">Escolha um projeto abaixo para explorar meu trabalho.</p>
+        </div>
+    </header>
+    <main class="flex-grow-1 d-flex align-items-center py-4">
+        <div class="container">
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4">
+                    <div class="card h-100 project-card border-top border-success border-4">
+                        <div class="card-body text-center p-4">
+                            <div class="mb-3">
+                                <span class="badge bg-dark border border-secondary text-light mb-2">Web App |
+                                    Fullstack</span><br>
+                                <span class="badge bg-success mb-2">Desenvolvido</span>
+                                <h3 class="card-title h5 mt-2 text-white">Associação de Pais de Benavente</h3>
+                            </div>
+                            <p class="card-text text-muted small">Site da associação de pais de Benavente. Desenvolvido
+                                para PAP do 12º ano.</p>
+                            <a href="https://ap-aebenavente.x10.mx/" target="_blank"
+                                class="btn btn-outline-success w-100 stretched-link">Launch Site</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 project-card border-top border-success border-4">
+                        <div class="card-body text-center p-4">
+                            <div class="mb-3">
+                                <span class="badge bg-dark border border-secondary text-light mb-2">Web App |
+                                    Frontend</span><br>
+                                <span class="badge bg-success mb-2">Desenvolvido</span>
+                                <h3 class="card-title h5 mt-2 text-white">visitCoruche.</h3>
+                            </div>
+                            <p class="card-text text-muted small">Frontend Website designada para o turismo local de
+                                Coruche.</p>
+                            <a href="https://rodriggogermino.github.io/projetoDPM/" target="_blank"
+                                class="btn btn-outline-success w-100 stretched-link">Launch Site</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 project-card border-top border-success border-4">
+                        <div class="card-body text-center p-4">
+                            <div class="mb-3">
+                                <span class="badge bg-dark border border-secondary text-light mb-2">Web App |
+                                    Fullstack</span><br>
+                                <span class="badge bg-success mb-2">Desenvolvido</span>
+                                <h3 class="card-title h5 mt-2 text-white">PedeJá</h3>
+                            </div>
+                            <p class="card-text text-muted small">Aplicação web para facilitar o agendamento e pedidos
+                                no bar escolar.</p>
+                            <a href="https://rodgui.antrob.eu/" target="_blank"
+                                class="btn btn-outline-success w-100 stretched-link">Launch Site</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 project-card border-top border-warning border-4">
+                        <div class="card-body text-center p-4">
+                            <div class="mb-3">
+                                <span class="badge bg-dark border border-secondary text-light mb-2">Web App |
+                                    Fullstack</span><br>
+                                <span class="badge bg-warning text-dark mb-2">Em desenvolvimento</span>
+                                <h3 class="card-title h5 mt-2 text-white">Recrutamento Marinha</h3>
+                            </div>
+                            <p class="card-text text-muted small">Website para recrutamento na Marinha. Estágio
+                                curricular | CTesP TPSI.</p>
+                            <a href="https://rodriggogermino.github.io/RecrutamentoMarinha/" target="_blank"
+                                class="btn btn-outline-warning w-100 stretched-link">Launch Site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="py-4 mt-auto">
+        <div class="container text-center">
+            <p class="text-muted mb-0 small">© 2026 Rodrigo Germino • Organizador de Projetos</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
